@@ -9,6 +9,13 @@ public class Vehicle {
         this.back = back;
         this.front = front;
     }
+    // Copy constructor
+    // This constructor creates a new Vehicle object as a copy of another Vehicle object
+    public Vehicle(Vehicle other) {
+        this.symbol = other.symbol;
+        this.back = new Position(other.back.getRow(), other.back.getCol());
+        this.front = new Position(other.front.getRow(), other.front.getCol());
+    }
 
     public char getSymbol() {
         return symbol;
