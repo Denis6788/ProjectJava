@@ -162,7 +162,6 @@ package com.example;
             List<Move> moves = new ArrayList<>();
             for (Vehicle vehicle : vehicles.values()) {
                 for (Direction dir : Direction.values()) {
-                    // Simuliraj potez bez promjene stanja
                     if (isMoveValid(vehicle, dir)) {
                         moves.add(new Move(vehicle.getSymbol(), dir));
                     }

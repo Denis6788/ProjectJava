@@ -22,7 +22,7 @@ public class RushHourConfig implements Configuration<RushHour> {
 
     @Override
     public boolean isGoal() {
-        return game.isSolved();  // You should implement this logic
+        return game.isSolved();
     }
 
     @Override
